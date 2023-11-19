@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+
+
+#ttt-container {
+ height: 350px;
+ margin: auto;
+ display: grid;
+place-items: center;
+position: relative;
+}
+
+
+#ttt-game {
+  width: 276px;
+  text-align: center;
+}
+
+#ttt-game .cell {
+  width: 90px;
+  height: 90px;
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid orange;
+  float: left;
+}
+
+#ttt-info-container {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 100%;
+}
+
+#ttt-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restart-button {
+  position: absolute;
+  bottom: 15px;
+
+}
+
+.refresh-button {
+  position: absolute;
+  bottom: 15px;
+
+}
+
+.players {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#rounds {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  border: 1px;
+}
+
+.winner-cell {
+  color: orange;
+}
